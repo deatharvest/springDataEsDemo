@@ -99,6 +99,7 @@ public class ElasticTest {
         final List<Person> persons = elasticsearchTemplate.queryForList(searchQuery, Person.class);
 
         assertThat(persons.size(), is(1));
+
     }
 
 
